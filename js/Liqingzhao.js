@@ -9,7 +9,7 @@ Yugg
 [rewrite_local]
 
 
-^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/2023djash/Surge/main/Liqingzhao.js
+^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/2023djash/2023djash/main/js/Liqingzhao.js
 
 [mitm] 
 
