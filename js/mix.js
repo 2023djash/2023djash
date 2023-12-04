@@ -9,7 +9,7 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/cdn-bm\.camera360\.com\/api\/(mix\/(getinfo|purchase|recovery)|iap\/check-receipt) url script-response-body https://raw.githubusercontent.com/2023djash/blog-img/main/mix.js
+^https?:\/\/cdn-bm\.camera360\.com\/api\/(mix\/(getinfo|purchase|recovery)|iap\/check-receipt) url script-response-body https://raw.githubusercontent.com/2023djash/2023djash/main/js/mix.js
 
 [mitm]
 hostname = cdn-bm.camera360.com
