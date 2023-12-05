@@ -6,8 +6,8 @@ Imagexai图片改善 lens画质增强 西江诗词 Darkroom Inpaper YouBePip播�
 **************************************
 
 [rewrite_local]
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/2023djash/blog-img/main/RevenuecatHeji.js
-^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/2023djash/blog-img/main/RevenuecatHeji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-response-body https://raw.githubusercontent.com/2023djash/2023djash/main/js/RevenuecatHeji.js
+^https:\/\/api\.revenuecat\.com\/.+\/(receipts$|subscribers\/?(.*?)*$) url script-request-header https://raw.githubusercontent.com/2023djash/2023djash/main/js/RevenuecatHeji.js
 ^https:\/\/app-measurement\.com\/config\/app\/.+ url reject
 
 [mitm]
