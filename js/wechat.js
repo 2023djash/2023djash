@@ -19,7 +19,7 @@ http-response ^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad requires-body=1,m
 [MITM]
 hostname = mp.weixin.qq.com
 
-**************************/
+*/
 
 var obj = JSON.parse($response.body);
 obj.advertisement_num = 0;
