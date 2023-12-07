@@ -33,7 +33,7 @@ if (url.indexOf(chatiao) != -1){
 
 //购买页面的SVIP
 if (url.indexOf(vipa) != -1){
-   body = body.replace(/\{.+\}/g, '\{  "status" : "normal",  "identity" : "svip",  "icon" : "https://gw.alicdn.com/imgextra/i3/O1CN01iPKCuZ1urjDgiry5c_!!6000000006091-2-tps-60-60.png",  "level" : "8t",  "vipList" : [    {      "code" : "svip.8t",      "promotedAt" : 1691769901,      "expire" : 4092599349,      "name" : "超级会员"    }  ],  "mediumIcon" : "https://github.com/2023djash/Surge/raw/main/Other/IMG_7130.png"  }');
+   body = body.replace(/\{.+\}/g, '\{  "status" : "normal",  "identity" : "svip",  "icon" : "https://github.com/2023djash/Surge/raw/main/Other/IMG_7131.png",  "level" : "8t",  "vipList" : [    {      "code" : "svip.8t",      "promotedAt" : 1691769901,      "expire" : 4092599349,      "name" : "超级会员"    }  ],  "mediumIcon" : "https://github.com/2023djash/Surge/raw/main/Other/IMG_7130.png"  }');
 }
 
 //我的页面SVIP
