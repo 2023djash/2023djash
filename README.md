@@ -1,6 +1,7 @@
 - 👋 Hi, I’m @tianyu
 - 👀 I’m interested in ...唱歌
 - 🌱 I’m currently learning ...
+https://github.com/2023djash/blog-img/raw/main/CKMC8966.png
 
 <!---
 2023djash/2023djash is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
