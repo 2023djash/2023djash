@@ -89,7 +89,7 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 ###结束
 
 proxy-providers:
-  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url:https://sb.meslcloud.com/api/v1/client/subscribe?token=5daf8da8ed12f11ba9cdfd6ac685f513}
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url:https://vaet.xyz/api/v1/client/subscribe?token=119a53df236c432875f831a23d1ed62f}
     # 将"http://your-service-provider"替换为你的机场订阅，推荐使用base64或者node list
     # Sub-Store生成的链接,可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
