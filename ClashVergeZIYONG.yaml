@@ -181,7 +181,7 @@ rules:
   - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
-
+  - MATCH,🚀 手动切换
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
