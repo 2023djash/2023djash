@@ -117,7 +117,7 @@ proxy-groups:
 
   - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
 
-  - {neme: DOUDI, type: select, proxies: [🇸🇬 狮城节点]}
+  - {neme: DOUDI, type: select, proxies: [DIRECT, 🇸🇬 狮城节点]}
 
     #节点地区分组
 
