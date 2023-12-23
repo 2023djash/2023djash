@@ -101,19 +101,15 @@ proxy-groups:
 
   - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT]}
 
-  - {name: 📽️ 国际媒体, <<: *pr}
-
   - {name: 🍎 苹果服务, <<: *pr}
 
   - {name: 🖥️ 微软服务, <<: *pr}
 
-  - {name: 🌌 谷歌服务, <<: *pr}
+  - {name: 🌌 谷歌服务, <type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
   - {name: 📟 电报消息, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
-  - {name: 🤖 OpenAI, <<: *pr}
-
-  - {name: 🎮 游戏平台, <<: *pr}
+  - {name: 🤖 OpenAI, type: select, proxies: [🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点]}
 
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
 
@@ -121,9 +117,7 @@ proxy-groups:
 
   - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
 
-  - {name: 🐟 兜底分流, <<: *pr}
-
-  #节点地区分组
+    #节点地区分组
 
   - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
 
@@ -135,7 +129,7 @@ proxy-groups:
 
   - {name: 🇨🇳 台湾节点, <<: *select, filter: "(?i)🇹🇼|台湾|(\b(TW|Tai|Taiwan)\b)"}
 
-  - {name: ♻️ 自动选择, <<: *select}
+  - {name: KR 棒子节点, <<: *select, filter: "(?i)KR|韩国|韩|(\b(kr|KR|hangguo)\b)"}
 
   - {name: ⚠️ 故障转移, <<: *fallback}
 
@@ -169,17 +163,11 @@ rule-providers:
   # 哔哩哔哩
   BiliBili: {<<: *c, path: ./rule-providers/BiliBili.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/rule-providers/Bilibili.yaml}
 
-  # 游戏平台
-  Game: {<<: *c, path: ./rule-providers/Game.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Game/Game.yaml}
-
   # AI平台
   OpenAI: {<<: *c, path: ./rule-providers/OpenAI.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/rule-providers/OpenAi.yaml}
 
-  # 中国大陆
+  # 大中国
   ChinaDomain: {<<: *c, path: ./rule-providers/ChinaDomain.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml}
-
-  # 国际媒体
-  ProxyMedia: {<<: *c, path: ./rule-providers/ProxyMedia.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml}
 
   # 代理网站
   ProxyGFWlist: {<<: *c, path: ./rule-providers/ProxyGFWlist.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml}
@@ -198,10 +186,9 @@ rules:
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,Game,🎮 游戏平台
-  - RULE-SET,ProxyMedia,📽️ 国际媒体
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
-  - MATCH,🐟 兜底分流
+  - MATCH,🚀 手动切换
 
 script:
   shortcuts:
