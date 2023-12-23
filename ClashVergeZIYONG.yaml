@@ -60,7 +60,7 @@ dns:
 ###建立锚点
     
 # 策略组引用相关参数
-pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点,  🇨🇳 台湾节点, ♻️ 自动选择, ⚠️ 故障转移, DIRECT]}
+pr: &pr {type: select, proxies: [🚀 手动切换, 🇭🇰 香港节点, 🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, KR 棒子节点, ⚠️ 故障转移, DIRECT]}
 
 # 订阅更新和延迟测试相关参数
 p: &p {type: http, interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
@@ -99,7 +99,7 @@ proxy-groups:
 
   #分流分组
 
-  - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT]}
+  - {name: 🚀 手动切换, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇺🇸 美国节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, KR 棒子节点, DIRECT]}
 
   - {name: 🍎 苹果服务, type: select, proxies: [DIRECT, 🚀 手动切换]}
 
@@ -140,9 +140,6 @@ rule-providers:
 
   # 局域网   
   Lan: {<<: *c, path: ./rule-providers/Lan.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/LocalAreaNetwork.yaml}
-
-  # 下载服务
-  Download: {<<: *c, path: ./rule-providers/Download.yaml, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml}
     
   #广告拦截
   AD@dler-io: {<<: *c, path: ./rule-providers/AD.yaml, url: https://raw.githubusercontent.com/dler-io/Rules/main/Clash/Provider/Reject.yaml}
@@ -184,7 +181,6 @@ rules:
   - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
-  - MATCH,🚀 手动切换
 
 script:
   shortcuts:
