@@ -103,9 +103,9 @@ proxy-groups:
 
   - {name: 🍎 苹果服务, type: select, proxies: [DIRECT, 🚀 手动切换]}
 
-  - {name: 🖥️ 微软服务, <<: *pr}
-
-  - {name: 🌌 谷歌服务, <<: *pr}
+  - {name: 🖥️ 微软服务, type: select, proxies: [DIRECT, 🚀 手动切换]}
+  
+  - {name: 🌌 谷歌服务, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
   - {name: 📟 电报消息, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
