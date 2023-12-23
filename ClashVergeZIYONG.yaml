@@ -117,6 +117,8 @@ proxy-groups:
 
   - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
 
+  - {neme: DOUDI, type: select, proxies: [🇸🇬 狮城节点]}
+
     #节点地区分组
 
   - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong)\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$"}
@@ -181,7 +183,7 @@ rules:
   - RULE-SET,BiliBili,📺 哔哩哔哩
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
-  - MATCH, 🇸🇬 狮城节点
+  - MATCH,DOUDI
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
