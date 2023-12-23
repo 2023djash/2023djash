@@ -105,15 +105,15 @@ proxy-groups:
 
   - {name: 🖥️ 微软服务, <<: *pr}
 
-  - {name: 🌌 谷歌服务, <type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
+  - {name: 🌌 谷歌服务, <type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
-  - {name: 📟 电报消息, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
+  - {name: 📟 电报消息, type: select, use: [Subscribe], proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
-  - {name: 🤖 OpenAI, type: select, proxies: [🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点]}
+  - {name: 🤖 OpenAI, type: select, use: [Subscribe], proxies: [🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点]}
 
-  - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
+  - {name: 📺 哔哩哔哩, type: select, use: [Subscribe], proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
 
-  - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
+  - {name: 🌏 国内网站, type: select, use: [Subscribe], proxies: [DIRECT, 🚀 手动切换]}
 
   - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
 
@@ -182,7 +182,6 @@ rules:
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,BiliBili,📺 哔哩哔哩
-  - RULE-SET,Game,🎮 游戏平台
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🚀 手动切换
