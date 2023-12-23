@@ -190,8 +190,6 @@ rules:
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,BiliBili,📺 哔哩哔哩
-  - RULE-SET,ProxyMedia,📽️ 国际媒体
-  - RULE-SET,ProxyGFWlist,🌏 国外网站
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🐟 兜底分流
