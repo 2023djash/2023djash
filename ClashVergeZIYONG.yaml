@@ -167,7 +167,12 @@ rule-providers:
 
   # 大中国
   ChinaDomain: {<<: *c, path: ./rule-providers/ChinaDomain.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml}
- 
+  
+  # 国际媒体
+  ProxyMedia: {<<: *c, path: ./rule-providers/ProxyMedia.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyMedia.yaml}
+
+  # 代理网站
+  ProxyGFWlist: {<<: *c, path: ./rule-providers/ProxyGFWlist.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml}
 rules:
   #- SCRIPT,quic,REJECT
   - RULE-SET,Direct,DIRECT
@@ -181,6 +186,8 @@ rules:
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,BiliBili,📺 哔哩哔哩
+  - RULE-SET,ProxyMedia,📽️ 国际媒体
+  - RULE-SET,ProxyGFWlist,🌏 国外网站
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🐟 兜底分流
