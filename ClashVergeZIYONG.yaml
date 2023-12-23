@@ -109,7 +109,7 @@ proxy-groups:
 
   - {name: 📟 电报消息, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
 
-  - {name: 🤖 OpenAI, type: select, proxies: [🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点]}
+  - {name: 🤖 OPEN AI, type: select, proxies: [🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点]}
 
   - {name: 📺 哔哩哔哩, type: select, proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点]}
 
@@ -183,13 +183,15 @@ rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
   - RULE-SET,AD@dler-io,🛑 AdBlock
-  - RULE-SET,OpenAI,🤖 OpenAI
+  - RULE-SET,OpenAI,🤖 OPEN AI
   - RULE-SET,Apple,🍎 苹果服务
   - RULE-SET,Microsoft,🖥️ 微软服务
   - RULE-SET,Youtube,🌌 谷歌服务
   - RULE-SET,Google,🌌 谷歌服务
   - RULE-SET,Telegram,📟 电报消息
   - RULE-SET,BiliBili,📺 哔哩哔哩
+   - RULE-SET,ProxyMedia,📽️ 国际媒体
+  - RULE-SET,ProxyGFWlist,🌏 国外网站
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🐟 兜底分流
