@@ -116,6 +116,10 @@ proxy-groups:
   - {name: 🌏 国内网站, type: select, proxies: [DIRECT, 🚀 手动切换]}
 
   - {name: 🛑 AdBlock, type: select, proxies: [REJECT, DIRECT]}
+
+  - {name: 📽️ 国际媒体, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
+
+  - {name: 🌏 国外网站, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
   
   - {name: 🐟 兜底分流, type: select, proxies: [🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点]}
   
