@@ -173,11 +173,11 @@ rule-providers:
 
   # 代理网站
   ProxyGFWlist: {<<: *c, path: ./rule-providers/ProxyGFWlist.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml}
+
 rules:
   #- SCRIPT,quic,REJECT
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Lan,DIRECT
-  #- RULE-SET,Download,DIRECT
   - RULE-SET,AD@dler-io,🛑 AdBlock
   - RULE-SET,OpenAI,🤖 OpenAI
   - RULE-SET,Apple,🍎 苹果服务
@@ -191,6 +191,7 @@ rules:
   - RULE-SET,ChinaDomain,🌏 国内网站
   - GEOIP,CN,🌏 国内网站
   - MATCH,🐟 兜底分流
+  
 script:
   shortcuts:
     quic: network == 'udp' and dst_port == 443
