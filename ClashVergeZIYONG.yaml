@@ -168,9 +168,6 @@ rule-providers:
 
   # 大中国
   ChinaDomain: {<<: *c, path: ./rule-providers/ChinaDomain.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ChinaDomain.yaml}
-
-  # 代理网站
-  ProxyGFWlist: {<<: *c, path: ./rule-providers/ProxyGFWlist.yaml, url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml}
  
 rules:
   #- SCRIPT,quic,REJECT
