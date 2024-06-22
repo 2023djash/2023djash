@@ -1,5 +1,5 @@
 # 规则名称:GlobalMedia
-# 规则统计:375
+# 规则统计:352
 
 payload:
   - DOMAIN,44wilhpljf.execute-api.ap-southeast-1.amazonaws.com
