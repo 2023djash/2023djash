@@ -267,7 +267,7 @@ proxy-groups:
 rules:
   - RULE-SET, 规则修正, DIRECT
   - RULE-SET, 广告拦截, REJECT
-  - RULE-SET, Douyin,Lem
+  - RULE-SET, Douyin,自选
   - RULE-SET, Spotify,Sfy
   - RULE-SET, TikTok,Tik
   - RULE-SET, Telegram,Teg
