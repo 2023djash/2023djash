@@ -1,3 +1,94 @@
+# 配置名称: Clash 配置
+# 配置作者: djash
+# 更新时间: 24-06-23 05:00
+
+port: 7890            # HTTP   端口
+socks-port: 7891      # Socks  端口
+redir-port: 7892      # Redir  端口
+mixed-port: 7893      # Mixed  端口
+tproxy-port: 7894     # Tproxy 端口
+allow-lan: true       # 允许局域网连接
+bind-address: '*'     # 地址绑定
+mode: Rule            # 规则模式
+log-level: info       # 日志级别
+ipv6: false           # IPv6 开关
+
+# 外部控制器
+external-controller: 127.0.0.1:9090
+
+# 服务器配置
+dns:
+  enable: false       # 禁用系统 DNS
+  ipv6: false         # 解析开关 IPv6
+  listen: 0.0.0.0:53  # DNS 监听
+  default-nameserver: # 常规 DNS
+    - 223.5.5.5
+    - 119.29.29.29
+
+  nameserver:         # 加密 DNS
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
+
+  fallback:           # 国外 DNS
+    - https://dns.google/dns-query
+    - https://cloudflare-dns.com/dns-query
+
+# 增强模式:FAKE-IP或REDIR-HOST
+  enhanced-mode: fake-ip
+
+# FAKE-IP 范围
+  fake-ip-range: 198.18.0.1/16
+
+# FAKE-IP 过滤
+  fake-ip-filter:
+    - '*.lan'
+    - '*.linksys.com'
+    - '*.linksyssmartwifi.com'
+    - 'swscan.apple.com'
+    - 'mesu.apple.com'
+    - '*.msftconnecttest.com'
+    - '*.msftncsi.com'
+    - 'time.*.edu.cn'
+    - '*.time.edu.cn'
+    - '*.ntp.org.cn'
+    - '+.pool.ntp.org'
+    - 'time1.cloud.tencent.com'
+    - '+.music.163.com'
+    - '*.126.net'
+    - 'musicapi.taihe.com'
+    - 'music.taihe.com'
+    - 'songsearch.kugou.com'
+    - 'trackercdn.kugou.com'
+    - '*.kuwo.cn'
+    - 'api-jooxtt.sanook.com'
+    - 'api.joox.com'
+    - 'joox.com'
+    - '+.y.qq.com'
+    - '+.music.tc.qq.com'
+    - 'aqqmusic.tc.qq.com'
+    - '+.stream.qqmusic.qq.com'
+    - '*.xiami.com'
+    - '+.music.migu.cn'
+    - '+.srv.nintendo.net'
+    - '+.stun.playstation.net'
+    - 'xbox.*.microsoft.com'
+    - '+.xboxlive.com'
+    - 'localhost.ptlogin2.qq.com'
+    - 'proxy.golang.org'
+    - 'stun.*.*'
+    - 'stun.*.*.*'
+    - '*.mcdn.bilivideo.cn'
+
+  fallback-filter:    # 回退过滤器
+    geoip: false      # GEOIP 启用
+    geoip-code: CN    # GEOIP 编码
+    ipcidr:           # IPCIDR
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+
+# 代理
+proxies: null
+
 # 代理订阅
 proxy-providers:
   djash:
@@ -12,7 +103,7 @@ proxy-providers:
 
 # 代理策略组
 proxy-groups:
-  - name: "ZiX"
+  - name: "自选"
     type: select
     use:
       - djash
@@ -122,7 +213,7 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - ZiX
+      - 自选
       - HK
       - TW
       - KR
