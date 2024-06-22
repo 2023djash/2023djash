@@ -1,0 +1,307 @@
+# 代理订阅
+proxy-providers:
+  djash:
+    type: http
+    url: "https://s0.ssysub1.xyz/api/v1/client/subscribe?token=8290dd10d2dd967bf58dbb536601bbbf" # 🧸
+    interval: 3600
+    path: ./Server/djash.yaml
+    health-check:
+      enable: true
+      url: https://cp.cloudflare.com/generate_204
+      interval: 600
+
+# 代理策略组
+proxy-groups:
+  - name: "ZiX"
+    type: select
+    use:
+      - djash
+  
+  - name: "Sfy"
+    type: select
+    proxies: 
+      - DIRECT
+      - HK
+      - TW
+      - SG
+
+  - name: "Tik"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - JP
+      - USA
+
+  - name: "Ins"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - JP
+      - USA
+
+  - name: "GPT"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - JP
+      - USA
+
+  - name: "Mic"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - JP
+      - USA
+
+  - name: "Teg"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - JP
+      - USA
+
+  - name: "GHB"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - SG
+      - JP
+      - USA
+
+  - name: "CnM"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - JP
+      - KR
+      - SG
+      - USA
+
+  - name: "GbM"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - JP
+      - KR
+      - SG
+      - USA
+
+  - name: "Global"
+    type: select
+    proxies:
+      - DIRECT
+      - HK
+      - TW
+      - JP
+      - KR
+      - SG
+      - USA
+
+  - name: "Doudi"
+    type: select
+    proxies:
+      - DIRECT
+      - ZiX
+      - HK
+      - TW
+      - KR
+      - JP
+      - SG
+      - USA
+
+  - name: "HK"
+    type: select
+    filter: "香港|港|HK|🇭🇰|(?i)Hong"
+    use:
+      - djash
+
+  - name: "TW"
+    type: select
+    filter: "台湾|台|TW|🇹🇼|(?i)Taiwan"
+    use:
+      - djash
+
+  - name: "JP"
+    type: select
+    filter: "日本|日|JP|🇯🇵|(?i)Japan"
+    use:
+      - djash
+
+  - name: "KR"
+    type: select
+    filter: "韩国|韩|KR|🇰🇷|(?i)Korea"
+    use:
+      - djash
+
+  - name: "SG"
+    type: select
+    filter: "新加坡|狮|SG|🇸🇬|(?i)Singapore"
+    use:
+      - djash
+
+  - name: "USA"
+    type: select
+    filter: "美国|美|US|🇺🇸|(?i)States"
+    use:
+      - djash
+
+- name: "LeM"
+    type: select
+    filter: "🇻🇳|🇲🇾|🇵🇭|🇺🇸|(?i)"
+    use:
+      - djash
+
+# 本地规则
+rules:
+  - RULE-SET, 规则修正, DIRECT
+  - RULE-SET, 广告拦截, REJECT
+  - RULE-SET, Douyin,Lem
+  - RULE-SET, Spotify,Sfy
+  - RULE-SET, TikTok,Tik
+  - RULE-SET, Telegram,Teg
+  - RULE-SET, Github,GHB
+  - RULE-SET, YouTube,GHB
+  - RULE-SET, Google,GHB
+  - RULE-SET, Instagram,Ins
+  - RULE-SET, Openai,GPT
+  - RULE-SET, Microsoft,Mic
+  - RULE-SET, 国际媒体,GbM
+  - RULE-SET, 全球加速,Global
+  - RULE-SET, 局域网络, DIRECT
+  - RULE-SET, 国内规则, DIRECT
+  - MATCH, Doudi
+
+# 远程规则
+rule-providers:
+  规则修正: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Unbreak.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Unbreak.yaml
+
+  广告拦截: 
+    behavior: domain
+    interval: 86400
+    type: http
+    path: ./Rules/AdBlock.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/AdBlock.yaml
+
+  Douyin: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Douyin.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Douyin.yaml
+
+  Telegram: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Telegram.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Telegram.yaml
+
+  TikTok: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/TikTok.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/TikTok.yaml
+
+  Spotify: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Spotify.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Spotify.yaml
+
+  Github: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Github.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Github.yaml
+
+  YouTube: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/YouTube.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/YouTube.yaml
+
+  Google: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Google.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Google.yaml
+
+  Instagram: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Instagram.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Instagram.yaml
+
+  Openai: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Openai.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Openai.yaml
+
+  Microsoft: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Microsoft.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Microsoft.yaml
+
+  国际媒体: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/GlobalMedia.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/GlobalMedia.yaml
+
+  全球加速: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Global.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Global.yaml
+
+  局域网络: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/LAN.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/LAN.yaml
+
+  国内规则: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/GeoipCN.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/GeoipCN.yaml
