@@ -396,3 +396,4 @@ rule-providers:
     type: http
     path: ./Rules/GeoipCN.yaml
     url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/GeoipCN.yaml
+
