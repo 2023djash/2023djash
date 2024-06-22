@@ -69,7 +69,6 @@ payload:
   - DOMAIN,vod-dash-uk-live.akamaized.net
   - DOMAIN,vod-thumb-uk-live.akamaized.net
   - DOMAIN,x-default-stgec.uplynk.com
-  - DOMAIN,youtubei.googleapis.com
   - DOMAIN,yt3.ggpht.com
   - DOMAIN-SUFFIX,5itv.tv
   - DOMAIN-SUFFIX,abc.com
@@ -160,7 +159,6 @@ payload:
   - DOMAIN-SUFFIX,foxdcg.com
   - DOMAIN-SUFFIX,gamer.com.tw
   - DOMAIN-SUFFIX,go.com
-  - DOMAIN-SUFFIX,googlevideo.com
   - DOMAIN-SUFFIX,gvt2.com
   - DOMAIN-SUFFIX,haiwaikan.com
   - DOMAIN-SUFFIX,hamivideo.hinet.net
