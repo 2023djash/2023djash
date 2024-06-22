@@ -306,6 +306,13 @@ rule-providers:
     path: ./Rules/Douyin.yaml
     url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Douyin.yaml
 
+  Spotify: 
+    behavior: classical
+    interval: 86400
+    type: http
+    path: ./Rules/Spotify.yaml
+    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Spotify.yaml
+
   Telegram: 
     behavior: classical
     interval: 86400
@@ -319,13 +326,6 @@ rule-providers:
     type: http
     path: ./Rules/TikTok.yaml
     url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/TikTok.yaml
-
-  Spotify: 
-    behavior: classical
-    interval: 86400
-    type: http
-    path: ./Rules/Spotify.yaml
-    url: https://raw.githubusercontent.com/2023djash/2023djash/main/Clash/Rules/Spotify.yaml
 
   Github: 
     behavior: classical
