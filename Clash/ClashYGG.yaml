@@ -93,7 +93,7 @@ proxies: null
 proxy-providers:
   djash:
     type: http
-    url: "https://s0.ssysub1.xyz/api/v1/client/subscribe?token=8290dd10d2dd967bf58dbb536601bbbf" # 🧸
+    url: "https://s0.token=订阅" # 🧸
     interval: 3600
     path: ./Server/djash.yaml
     health-check:
