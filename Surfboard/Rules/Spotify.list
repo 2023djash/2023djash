@@ -30,9 +30,9 @@ DOMAIN-SUFFIX,spotifyjobs.com
 DOMAIN-SUFFIX,spotifynewsroom.jp
 DOMAIN-SUFFIX,spotilocal.com
 DOMAIN-SUFFIX,tospotify.com
-DOMAIN-KEYWORD,cdn.branch.io
-DOMAIN-KEYWORD,api2.branch.io
-DOMAIN-KEYWORD,update.liteapks.com
+DOMAIN-SUFFIX,cdn.branch.io
+DOMAIN-SUFFIX,api2.branch.io
+DOMAIN-SUFFIX,update.liteapks.com
 DOMAIN-KEYWORD,-spotify-
 DOMAIN-KEYWORD,spotify.com
 IP-CIDR,104.154.127.126/32,no-resolve
