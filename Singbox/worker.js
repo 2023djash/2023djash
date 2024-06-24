@@ -17,7 +17,7 @@ const worker_default = {
     async fetch(request, env, ctx) {
         try {
             proxyIP = env.PROXYIP || proxyIP;
-            sha224Password = env.SHA224PASS || sha224Password
+            sha224Password = env.SHA224PASS || 987654321
             const upgradeHeader = request.headers.get("Upgrade");
             if (!upgradeHeader || upgradeHeader !== "websocket") {
                 const url = new URL(request.url);
