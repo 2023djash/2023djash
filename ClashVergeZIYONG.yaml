@@ -89,7 +89,7 @@ i: &i {type: http, behavior: ipcidr, interval: 86400}
 ###结束
 
 proxy-providers:
-  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url:https://vaet.xyz/api/v1/client/subscribe?token=119a53df236c432875f831a23d1ed62f}
+  Subscribe: {<<: *p, path: ./proxy-providers/Sub.yaml, url:https://api.v1.mk/sub?target=mixed&url=https%3A%2F%2F1.ssysub2.com%2Fapi%2Fv1%2Fclient%2Fsubscribe%3Ftoken%3D8290dd10d2dd967bf58dbb536601bbbf&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false}
     # 将"http://your-service-provider"替换为你的机场订阅，推荐使用base64或者node list
     # Sub-Store生成的链接,可以直接替换上述url引号中的部分,具体见Sub-Store教程         
                
