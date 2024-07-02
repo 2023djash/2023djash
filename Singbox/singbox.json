@@ -72,7 +72,7 @@
       "tag": "🛫 我的机场",
       "type": "remote",
       // 修改为你的 Clash 订阅链接
-      "download_url": "https://niceink.xyz/api/v1/client/subscribe?token=c6f19761720f2fdadf6e4f7b529e6560",
+      "download_url": "clash://install-config?url=https%3A%2F%2Ffly0001.buzz%2Fgateway%2Ffeitu%3Ftoken%3D68f2995dd96e344bb486ffae63a0a608&name=%E9%A3%9E%E5%85%94%E4%BA%91",
       "path": "./airport.yaml",
       "download_interval": "24h",
       "download_ua": "clash.meta",
