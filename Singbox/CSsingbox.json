@@ -50,7 +50,7 @@
       "tag": "🛫 我的机场 1",
       "type": "remote",
       // 机场订阅链接，使用 Clash 链接
-      "download_url": "https://example.com/xxx/xxx&flag=clash",
+      "download_url": "https://url.v1.mk/sub?target=clash&url=https%3A%2F%2Ffly0001.buzz%2Fgateway%2Ffeitu%3Ftoken%3D68f2995dd96e344bb486ffae63a0a608&insert=false&config=https%3A%2F%2Fraw.githubusercontent.com%2FACL4SSR%2FACL4SSR%2Fmaster%2FClash%2Fconfig%2FACL4SSR_Online_Full_NoAuto.ini&emoji=true&list=false&xudp=false&udp=false&tfo=false&expand=true&scv=false&fdn=false&new_name=true&flag=clash",
       "path": "./providers/airport1.yaml",
       "download_interval": "24h",
       "download_ua": "clash.meta",
