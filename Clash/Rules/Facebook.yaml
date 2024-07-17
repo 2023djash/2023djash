@@ -1,5 +1,4 @@
 # NAME: Facebook
-payload:
   - DOMAIN-SUFFIX,aboutfacebook.com
   - DOMAIN-SUFFIX,accessfacebookfromschool.com
   - DOMAIN-SUFFIX,accountkit.com
