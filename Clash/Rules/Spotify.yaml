@@ -8,5 +8,6 @@ payload:
   - DOMAIN-SUFFIX,spotify.com
   - DOMAIN-SUFFIX,spotifycdn.com
   - DOMAIN-SUFFIX,spotifycdn.net
+  - DOMAIN-SUFFIX,update.liteapks.com
   - DOMAIN-KEYWORD,-spotify-
   - DOMAIN-KEYWORD,spotify.com
