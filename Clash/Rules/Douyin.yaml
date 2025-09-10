@@ -1,7 +1,10 @@
 # 规则名称:DouYin
-# 规则统计:11
-
+# DOMAIN: 2
+# DOMAIN-SUFFIX: 11
+# TOTAL: 13
 payload:
+  - DOMAIN,lf3-static.bytednsdoc.com
+  - DOMAIN,v5-dy-o-abtest.zjcdn.com
   - DOMAIN-SUFFIX,amemv.com
   - DOMAIN-SUFFIX,douyincdn.com
   - DOMAIN-SUFFIX,douyinpic.com
