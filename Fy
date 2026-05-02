@@ -1,0 +1,349 @@
+{
+    "version": "1.0",
+    "exportTime": 1773349257142,
+    "rules": [
+        {
+            "id": "loc-cn",
+            "name": "中国",
+            "regex": ".*China.*|.*CN.*|.*中国.*|.*中.*|.*回国.*|.*家乡.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
+        },
+        {
+            "id": "loc-hk",
+            "name": "香港",
+            "regex": ".*Hong Kong.*|.*HK.*|.*香港.*|.*港.*|.*HONGKONG.*|.*HONG KONG.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png"
+        },
+        {
+            "id": "loc-mo",
+            "name": "澳门",
+            "regex": ".*Macao.*|.*Macau.*|.*MO.*|.*澳门.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Macao.png"
+        },
+        {
+            "id": "loc-tw",
+            "name": "台湾",
+            "regex": ".*Taiwan.*|.*TW.*|.*台湾.*|.*台.*|.*TAIWAN.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/China.png"
+        },
+        {
+            "id": "loc-jp",
+            "name": "日本",
+            "regex": ".*Japan.*|.*JP.*|.*日本.*|.*日.*|.*东京.*|.*大阪.*|.*JAPAN.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png"
+        },
+        {
+            "id": "loc-kr",
+            "name": "韩国",
+            "regex": ".*South Korea.*|.*Korea.*|.*KR.*|.*韩国.*|.*韩.*|.*首尔.*|.*SOUTH KOREA.*|.*KOREA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png"
+        },
+        {
+            "id": "loc-sg",
+            "name": "新加坡",
+            "regex": ".*Singapore.*|.*SG.*|.*新加坡.*|.*新.*|.*狮.*|.*狮城.*|.*SINGAPORE.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png"
+        },
+        {
+            "id": "loc-my",
+            "name": "马来西亚",
+            "regex": ".*Malaysia.*|.*MY.*|.*马来西亚.*|.*马.*|.*MALAYSIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Malaysia.png"
+        },
+        {
+            "id": "loc-id",
+            "name": "印度尼西亚",
+            "regex": ".*Indonesia.*|.*ID.*|.*印度尼西亚.*|.*印尼.*|.*INDONESIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Indonesia.png"
+        },
+        {
+            "id": "loc-ph",
+            "name": "菲律宾",
+            "regex": ".*Philippines.*|.*PH.*|.*菲律宾.*|.*菲.*|.*PHILIPPINES.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Philippines.png"
+        },
+        {
+            "id": "loc-vn",
+            "name": "越南",
+            "regex": ".*Vietnam.*|.*VN.*|.*越南.*|.*越.*|.*VIETNAM.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Vietnam.png"
+        },
+        {
+            "id": "loc-th",
+            "name": "泰国",
+            "regex": ".*Thailand.*|.*TH.*|.*泰国.*|.*泰.*|.*THAILAND.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Thailand.png"
+        },
+        {
+            "id": "loc-in",
+            "name": "印度",
+            "regex": ".*India.*|.*IN.*|.*印度.*|.*印.*|.*INDIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/India.png"
+        },
+        {
+            "id": "loc-tr",
+            "name": "土耳其",
+            "regex": ".*Turkey.*|.*Türkiye.*|.*TR.*|.*土耳其.*|.*土.*|.*伊斯坦布尔.*|.*安卡拉.*|.*TURKEY.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Turkey.png"
+        },
+        {
+            "id": "loc-il",
+            "name": "以色列",
+            "regex": ".*Israel.*|.*IL.*|.*以色列.*|.*以.*|.*ISRAEL.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Israel.png"
+        },
+        {
+            "id": "loc-ae",
+            "name": "阿联酋",
+            "regex": ".*United Arab Emirates.*|.*UAE.*|.*AE.*|.*阿联酋.*|.*迪拜.*|.*UNITED ARAB EMIRATES.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/United_Arab_Emirates.png"
+        },
+        {
+            "id": "loc-sa",
+            "name": "沙特阿拉伯",
+            "regex": ".*Saudi Arabia.*|.*SA.*|.*沙特阿拉伯.*|.*沙特.*|.*SAUDI ARABIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Saudi_Arabia.png"
+        },
+        {
+            "id": "loc-uk",
+            "name": "英国",
+            "regex": ".*United Kingdom.*|.*UK.*|.*GB.*|.*英国.*|.*伦敦.*|.*UNITED KINGDOM.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_Kingdom.png"
+        },
+        {
+            "id": "loc-de",
+            "name": "德国",
+            "regex": ".*Germany.*|.*DE.*|.*德国.*|.*德.*|.*法兰克福.*|.*GERMANY.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Germany.png"
+        },
+        {
+            "id": "loc-fr",
+            "name": "法国",
+            "regex": ".*France.*|.*FR.*|.*法国.*|.*法.*|.*巴黎.*|.*FRANCE.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/France.png"
+        },
+        {
+            "id": "loc-nl",
+            "name": "荷兰",
+            "regex": ".*Netherlands.*|.*NL.*|.*荷兰.*|.*荷.*|.*阿姆斯特丹.*|.*NETHERLANDS.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Netherlands.png"
+        },
+        {
+            "id": "loc-it",
+            "name": "意大利",
+            "regex": ".*Italy.*|.*IT.*|.*意大利.*|.*意.*|.*米兰.*|.*ITALY.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Italy.png"
+        },
+        {
+            "id": "loc-es",
+            "name": "西班牙",
+            "regex": ".*Spain.*|.*ES.*|.*西班牙.*|.*西.*|.*马德里.*|.*SPAIN.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Spain.png"
+        },
+        {
+            "id": "loc-pt",
+            "name": "葡萄牙",
+            "regex": ".*Portugal.*|.*PT.*|.*葡萄牙.*|.*葡.*|.*PORTUGAL.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Portugal.png"
+        },
+        {
+            "id": "loc-ch",
+            "name": "瑞士",
+            "regex": ".*Switzerland.*|.*CH.*|.*瑞士.*|.*瑞.*|.*苏黎世.*|.*SWITZERLAND.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Switzerland.png"
+        },
+        {
+            "id": "loc-se",
+            "name": "瑞典",
+            "regex": ".*Sweden.*|.*SE.*|.*瑞典.*|.*瑞.*|.*斯德哥尔摩.*|.*SWEDEN.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Sweden.png"
+        },
+        {
+            "id": "loc-no",
+            "name": "挪威",
+            "regex": ".*Norway.*|.*NO.*|.*挪威.*|.*挪.*|.*NORWAY.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Norway.png"
+        },
+        {
+            "id": "loc-dk",
+            "name": "丹麦",
+            "regex": ".*Denmark.*|.*DK.*|.*丹麦.*|.*丹.*|.*DENMARK.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Denmark.png"
+        },
+        {
+            "id": "loc-fi",
+            "name": "芬兰",
+            "regex": ".*Finland.*|.*FI.*|.*芬兰.*|.*芬.*|.*FINLAND.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Finland.png"
+        },
+        {
+            "id": "loc-pl",
+            "name": "波兰",
+            "regex": ".*Poland.*|.*PL.*|.*波兰.*|.*波.*|.*POLAND.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/kawayixixing/flag-collection/main/img/falg-icon/波兰.png"
+        },
+        {
+            "id": "loc-cz",
+            "name": "捷克",
+            "regex": ".*Czech Republic.*|.*Czech.*|.*CZ.*|.*捷克.*|.*捷.*|.*CZECH REPUBLIC.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Czech_Republic.png"
+        },
+        {
+            "id": "loc-ie",
+            "name": "爱尔兰",
+            "regex": ".*Ireland.*|.*IE.*|.*爱尔兰.*|.*爱.*|.*都柏林.*|.*IRELAND.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ireland.png"
+        },
+        {
+            "id": "loc-ru",
+            "name": "俄罗斯",
+            "regex": ".*Russia.*|.*RU.*|.*俄罗斯.*|.*俄.*|.*莫斯科.*|.*RUSSIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Russia.png"
+        },
+        {
+            "id": "loc-ua",
+            "name": "乌克兰",
+            "regex": ".*Ukraine.*|.*UA.*|.*乌克兰.*|.*乌.*|.*UKRAINE.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Ukraine.png"
+        },
+        {
+            "id": "loc-us",
+            "name": "美国",
+            "regex": ".*United States.*|.*US.*|.*美国.*|.*美.*|.*洛杉矶.*|.*纽约.*|.*圣何塞.*|.*硅谷.*|.*America.*|.*UNITED STATES.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png"
+        },
+        {
+            "id": "loc-ca",
+            "name": "加拿大",
+            "regex": ".*Canada.*|.*CA.*|.*加拿大.*|.*加.*|.*温哥华.*|.*多伦多.*|.*CANADA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Canada.png"
+        },
+        {
+            "id": "loc-mx",
+            "name": "墨西哥",
+            "regex": ".*Mexico.*|.*MX.*|.*墨西哥.*|.*墨.*|.*MEXICO.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Mexico.png"
+        },
+        {
+            "id": "loc-br",
+            "name": "巴西",
+            "regex": ".*Brazil.*|.*BR.*|.*巴西.*|.*巴.*|.*BRAZIL.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Brazil.png"
+        },
+        {
+            "id": "loc-ar",
+            "name": "阿根廷",
+            "regex": ".*Argentina.*|.*AR.*|.*阿根廷.*|.*阿.*|.*ARGENTINA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Argentina.png"
+        },
+        {
+            "id": "loc-cl",
+            "name": "智利",
+            "regex": ".*Chile.*|.*CL.*|.*智利.*|.*智.*|.*CHILE.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Chile.png"
+        },
+        {
+            "id": "loc-co",
+            "name": "哥伦比亚",
+            "regex": ".*Colombia.*|.*CO.*|.*哥伦比亚.*|.*哥.*|.*COLOMBIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Colombia.png"
+        },
+        {
+            "id": "loc-pe",
+            "name": "秘鲁",
+            "regex": ".*Peru.*|.*PE.*|.*秘鲁.*|.*秘.*|.*PERU.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Peru.png"
+        },
+        {
+            "id": "loc-za",
+            "name": "南非",
+            "regex": ".*South Africa.*|.*ZA.*|.*南非.*|.*南.*|.*约翰内斯堡.*|.*Johannesburg.*|.*SOUTH AFRICA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/South_Africa.png"
+        },
+        {
+            "id": "loc-eg",
+            "name": "埃及",
+            "regex": ".*Egypt.*|.*EG.*|.*埃及.*|.*埃.*|.*EGYPT.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Egypt.png"
+        },
+        {
+            "id": "loc-ng",
+            "name": "尼日利亚",
+            "regex": ".*Nigeria.*|.*NG.*|.*尼日利亚.*|.*尼.*|.*NIGERIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Nigeria.png"
+        },
+        {
+            "id": "loc-ke",
+            "name": "肯尼亚",
+            "regex": ".*Kenya.*|.*KE.*|.*肯尼亚.*|.*肯.*|.*KENYA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Kenya.png"
+        },
+        {
+            "id": "loc-au",
+            "name": "澳大利亚",
+            "regex": ".*Australia.*|.*AU.*|.*澳大利亚.*|.*澳.*|.*悉尼.*|.*墨尔本.*|.*AUSTRALIA.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Australia.png"
+        },
+        {
+            "id": "loc-nz",
+            "name": "新西兰",
+            "regex": ".*New Zealand.*|.*NZ.*|.*新西兰.*|.*新.*|.*奥克兰.*|.*NEW ZEALAND.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/New_Zealand.png"
+        },
+        {
+            "id": "loc-fj",
+            "name": "斐济",
+            "regex": ".*Fiji.*|.*FJ.*|.*斐济.*|.*斐.*|.*FIJI.*",
+            "iconType": "URL",
+            "iconData": "https://raw.githubusercontent.com/Semporia/Hand-Painted-icon/master/Rounded_Rectangle/Fiji.png"
+        }
+    ]
+}
